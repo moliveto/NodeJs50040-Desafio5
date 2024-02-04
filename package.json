@@ -7,7 +7,7 @@
   "homepage": "https://moliveto.github.io/NodeJs50040-Desafio5",
   "scripts": {
     "start": "nodemon .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
