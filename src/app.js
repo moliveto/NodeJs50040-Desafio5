@@ -18,7 +18,7 @@ io.on('connection', socket => {
     socket.on('update-products', async () => {
         console.log("inicio update socket")
         const products = await manager.getProducts();
-        console.log(products);
+        //console.log(products);
         socket.emit('products-data', products);
     });
 
@@ -31,9 +31,9 @@ io.on('connection', socket => {
         socket.emit("status-changed", response)
     })
 
-    socket.on('remove-product', async (code) => {
+    socket.on('remove-product', async (id) => {
         console.log("inicio remove socket")
-        const result = await manager.deleteProduct(code);
+        const result = await manager.deleteProduct(id);
         socket.emit("status-changed", result)
         const products = await manager.getProducts();
         socket.emit('products-data', products);

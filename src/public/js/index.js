@@ -14,11 +14,10 @@ form.addEventListener('submit', async (e) => {
 
 removeform.addEventListener('submit', async (e) => {
     e.preventDefault()
-    const code = removeform.elements["code"].value;
-    await socket.emit('remove-product', code)
+    const id = removeform.elements["id"].value;
+    await socket.emit('remove-product', id)
     await socket.emit('update-products');
     e.target.reset()
-
 })
 
 
@@ -41,11 +40,10 @@ socket.on('products-data', (products) => {
             `;
         });
     } else {
-        console.error('Productos no definidos o no es un array:', products);
+        console.error('No hay productos:', products);
     }
 
     tableBody.innerHTML = tableContent;
-
 });
 
 socket.on("status-changed", (result) => {

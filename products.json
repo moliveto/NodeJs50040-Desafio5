@@ -48,14 +48,5 @@
     "stock": 10,
     "status": true,
     "id": 5
-  },
-  {
-    "title": "Producto prueba 9",
-    "description": "Este es un producto prueba 9",
-    "price": 900,
-    "code": "9",
-    "stock": 90,
-    "status": true,
-    "id": 6
   }
 ]
