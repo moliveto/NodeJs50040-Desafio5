@@ -6,6 +6,7 @@
     "thumbnail": "Sin imagen",
     "code": "abc123",
     "stock": 10,
+    "status": true,
     "id": 1
   },
   {
@@ -15,6 +16,7 @@
     "thumbnail": "Sin imagen",
     "code": "321",
     "stock": 10,
+    "status": true,
     "id": 2
   },
   {
@@ -24,6 +26,7 @@
     "thumbnail": "Sin imagen",
     "code": "123",
     "stock": 10,
+    "status": true,
     "id": 3
   },
   {
@@ -33,6 +36,7 @@
     "thumbnail": "Sin imagen",
     "code": "1234",
     "stock": 10,
+    "status": true,
     "id": 4
   },
   {
@@ -42,6 +46,7 @@
     "thumbnail": "Sin imagen",
     "code": "12345",
     "stock": 10,
+    "status": true,
     "id": 5
   },
   {
@@ -50,7 +55,7 @@
     "price": 900,
     "code": "9",
     "stock": 90,
-    "id": 6,
-    "status": true
+    "status": true,
+    "id": 6
   }
 ]
