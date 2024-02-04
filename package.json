@@ -4,9 +4,12 @@
   "description": "",
   "main": "src/app.js",
   "type": "module",
+  "homepage": "https://moliveto.github.io/NodeJs50040-Desafio5",
   "scripts": {
     "start": "nodemon .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +17,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
+    "gh-pages": "^6.1.1",
     "nodemon": "^3.0.3",
     "socket.io": "^4.7.4"
   }
